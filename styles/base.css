@@ -2,12 +2,12 @@
 body {
     position: relative;
     background-color: #f4f4f4;
-    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Background Text */
+/* Header Background Text */
 .header-background {
     position: absolute;
     top: 0;
@@ -34,29 +34,43 @@ header {
     text-align: center;
 }
 
+/* Apply Blue Background to Title */
 h1 {
     margin: 0;
     font-size: 26px;
-    color: #333;
-    font-family: 'Bangers', cursive; /* Apply Bangers font */
+    color: white;
+    font-family: 'Bangers', cursive;
+    background: #0077cc;
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
 }
 
+/* Navigation with Black Background */
 nav {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-top: 10px;
+    background: black;
+    padding: 10px;
+    border-radius: 8px;
 }
 
+/* Navigation Links */
 nav a {
     text-decoration: none;
     font-size: 18px;
-    color: #0077cc;
+    color: white;
     font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
 }
 
+/* Hover effect for navigation links */
 nav a:hover {
-    text-decoration: underline;
+    background: #444;
+    text-decoration: none;
 }
 
 /* Main Content */
@@ -78,46 +92,61 @@ main {
 
 /* Card Styling (For About Me, Web Dev Resources, and Location) */
 .card {
-    font-size: 0.85em; /* Reduce text size */
-    padding: 15px; /* Reduce padding */
-    width: 90%; /* Adjust width to fit content */
-    max-width: 450px; /* Prevent excessive width */
-    margin: 15px auto; /* Keep it centered */
+    font-size: 0.85em;
+    padding: 15px;
+    width: 90%;
+    max-width: 450px;
+    margin: 15px auto;
     border-radius: 8px;
-    background: #ffffff;
+    background: #ffffff; /* White Background */
+    color: #333; /* Default Text Color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Reduce heading sizes in the cards */
 .card h2 {
-    font-size: 1em; /* Smaller headings */
+    font-size: 1em;
     font-weight: bold;
+    color: #0077cc; /* Blue Heading for contrast */
 }
 
 /* Adjust paragraph, list, and general text sizes */
 .card p, 
 .card ul, 
 .card li {
-    font-size: 0.9em; /* Reduce text size slightly */
+    font-size: 0.9em;
     line-height: 1.4;
+}
+
+/* Profile Image - Set to Passport Size */
+.about-content .image img {
+    width: 120px; /* Width for passport size */
+    height: 150px; /* Height for passport size */
+    object-fit: cover; /* Ensures the image fits perfectly */
+    border-radius: 5px; /* Slight rounded edges for a clean look */
+    display: block;
+    margin: 10px auto; /* Centers the image */
+    border: 2px solid #fff; /* Optional: White border for contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Light shadow effect */
 }
 
 /* Reduce the image size inside the cards */
 .card img {
-    max-width: 75%; /* Make images smaller */
+    max-width: 75%;
     height: auto;
     display: block;
-    margin: 10px auto; /* Center images */
+    margin: 10px auto;
 }
 
 /* Location Section Styling */
 .location h3 {
-    font-size: 1em; /* Smaller heading */
+    font-size: 1em;
     font-weight: bold;
+    color: #0077cc;
 }
 
 .location .text {
-    font-size: 0.85em; /* Smaller paragraph text */
+    font-size: 0.85em;
 }
 
 /* Adjust Nigeria flag image */
@@ -134,5 +163,5 @@ footer {
     padding: 20px;
     background: #222;
     color: white;
-    font-size: 12px; /* Smaller footer text */
+    font-size: 12px;
 }
