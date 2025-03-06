@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - SP Web & Software Solution">
+    <meta name="author" content="SP Web & Software Solution">
+    <title>WDD 131 – Sunday Prince Augustine</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <style>
+        .categories-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .card {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-background">
+        WDD 131: Sunday Prince Augustine - SP Web & Software Solution
+        <br>
+        LinkedIn &nbsp;&nbsp; Canvas &nbsp;&nbsp; Scripture &nbsp;&nbsp; Final Project
+    </div>
+    
+    <header>
+        <h1>WDD 131: Sunday Prince Augustine - <span class="highlight">SP Web & Software Solution</span></h1>
+        <nav>
+            <a href="https://linkedin.com">LinkedIn</a>&nbsp;&nbsp;&nbsp;
+            <a href="https://byupw.instructure.com/">Canvas</a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>&nbsp;&nbsp;&nbsp;
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="categories-container">
+            <section class="card about">
+                <h2>About Me</h2>
+                <p>My name is Sunday Prince Augustine. I am a student at Brigham Young University-Idaho studying Software Development. I am passionate about technology and innovation.</p>
+                <div class="about-content">
+                    <div class="image">
+                        <img src="profile.jpg" alt="Profile Image">
+                    </div>
+                </div>
+                <div class="location">
+                    <h3><strong>Akwa Ibom State, Nigeria</strong></h3>
+                    <p>Madagascar is the 4th largest island in the world and is located in the Indian Ocean. It is home to 5% of the world's plant and animal species, of which more than 80% are endemic to Madagascar. The island is best known for its lemurs, baobab trees, and vanilla.</p>
+                    <img src="Nigeria-flag.jpg" alt="Official Flag of Nigeria" class="flag">
+                </div>
+            </section>
+            
+            <section class="card resources">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="https://dev.to">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/">Udemy</a></li>
+                    <li><a href="#">Image Placeholder</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> SP Web & Software Solution - Nigeria</p>
+        <p id="lastModified">Last Modification: <span></span></p>
+    </footer>
+</body>
+</html>
