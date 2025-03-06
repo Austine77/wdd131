@@ -2,7 +2,7 @@
 body {
     position: relative;
     background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
     margin: 0;
     padding: 0;
 }
@@ -38,6 +38,7 @@ h1 {
     margin: 0;
     font-size: 26px;
     color: #333;
+    font-family: 'Bangers', cursive; /* Apply Bangers font */
 }
 
 nav {
@@ -68,12 +69,63 @@ main {
     border-radius: 8px;
 }
 
+/* Categories Container */
+.categories-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Card Styling (For About Me, Web Dev Resources, and Location) */
 .card {
-    margin-bottom: 20px;
-    padding: 20px;
+    font-size: 0.85em; /* Reduce text size */
+    padding: 15px; /* Reduce padding */
+    width: 90%; /* Adjust width to fit content */
+    max-width: 450px; /* Prevent excessive width */
+    margin: 15px auto; /* Keep it centered */
     border-radius: 8px;
     background: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Reduce heading sizes in the cards */
+.card h2 {
+    font-size: 1em; /* Smaller headings */
+    font-weight: bold;
+}
+
+/* Adjust paragraph, list, and general text sizes */
+.card p, 
+.card ul, 
+.card li {
+    font-size: 0.9em; /* Reduce text size slightly */
+    line-height: 1.4;
+}
+
+/* Reduce the image size inside the cards */
+.card img {
+    max-width: 75%; /* Make images smaller */
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Center images */
+}
+
+/* Location Section Styling */
+.location h3 {
+    font-size: 1em; /* Smaller heading */
+    font-weight: bold;
+}
+
+.location .text {
+    font-size: 0.85em; /* Smaller paragraph text */
+}
+
+/* Adjust Nigeria flag image */
+.location .flag {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
 }
 
 /* Footer */
@@ -82,5 +134,5 @@ footer {
     padding: 20px;
     background: #222;
     color: white;
-    font-size: 14px;
+    font-size: 12px; /* Smaller footer text */
 }
