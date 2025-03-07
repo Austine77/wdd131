@@ -37,12 +37,14 @@ header {
 /* Apply Blue Background to Title */
 h1 {
     margin: 0;
-    font-size: 26px;
+    font-size: 33px;
     color: white;
     font-family: 'Bangers', cursive;
-    background: #0077cc;
-    padding: 15px;
-    border-radius: 8px;
+    width: 98%;
+    height: 45px;
+    background: hsl(205, 94%, 20%);
+    padding: 10px;
+    border-radius: 0px;
     display: inline-block;
 }
 
@@ -126,7 +128,7 @@ main {
     border-radius: 5px; /* Slight rounded edges for a clean look */
     display: block;
     margin: 10px auto; /* Centers the image */
-    border: 2px solid #fff; /* Optional: White border for contrast */
+    border: 2px solid #05fc11; /* Optional: White border for contrast */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: Light shadow effect */
 }
 
