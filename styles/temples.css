@@ -6,6 +6,7 @@ body {
     background-color: #f5f5f5;
 }
 
+/* HEADER & NAVIGATION */
 header {
     background-color: #4b0076;
     color: white;
@@ -18,12 +19,17 @@ header {
 h1 {
     margin: 0;
     font-size: 1.5rem;
+    flex-grow: 1; /* Makes the title take available space */
 }
 
 nav {
-    display: none; /* Initially hidden for mobile */
+    display: none; /* Hidden on mobile */
     flex-direction: column;
     background: #4b0076;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
 }
 
 nav a {
@@ -31,6 +37,7 @@ nav a {
     color: white;
     padding: 10px;
     display: block;
+    text-align: center;
 }
 
 #menu-toggle {
@@ -41,6 +48,7 @@ nav a {
     cursor: pointer;
 }
 
+/* GALLERY */
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -67,6 +75,7 @@ figcaption {
     margin-top: 5px;
 }
 
+/* FOOTER */
 footer {
     background-color: #4b0076;
     color: white;
