@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #ff5733;
+    --secondary-color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.weather {
+    padding: 20px;
+    text-align: center;
+}
+
+@media (min-width: 601px) {
+    .weather h2::after {
+        content: " ⛅"; /* Pseudo-element for weather */
+    }
+}

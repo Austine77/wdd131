@@ -12,10 +12,28 @@
 }
 
 /* =============================
+   GOOGLE FONTS
+   ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@400;700&display=swap');
+
+/* Custom Font Styles */
+.bangers-regular {
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* =============================
    GENERAL STYLES
    ============================= */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -35,13 +53,15 @@ header {
     position: relative;
 }
 
+/* Header Title */
 h1 {
     margin: 0;
-    font-size: 1.5rem;
-    flex-grow: 1; /* Makes the title take available space */
+    font-size: 1.8rem;
+    flex-grow: 1;
+    font-family: "Bangers", system-ui;
 }
 
-/* Navigation Styles */
+/* Navigation */
 nav {
     display: none; /* Hidden by default (for mobile) */
     flex-direction: column;
@@ -60,6 +80,7 @@ nav a {
     padding: 10px;
     display: block;
     text-align: center;
+    font-weight: 400;
     transition: background-color var(--transition-speed) ease-in-out;
 }
 
@@ -133,6 +154,7 @@ figcaption {
     font-weight: bold;
     color: var(--primary-color);
     margin-top: 5px;
+    font-family: "Poppins", sans-serif;
 }
 
 /* =============================
@@ -143,4 +165,5 @@ footer {
     color: var(--text-color);
     padding: 10px;
     margin-top: 20px;
+    font-size: 0.9rem;
 }
