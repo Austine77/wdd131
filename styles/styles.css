@@ -1,26 +1,139 @@
-:root {
-    --primary-color: #ff5733;
-    --secondary-color: #ffffff;
-}
+/* =============================
+   GOOGLE FONTS
+   ============================= */
+   @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-.weather {
-    padding: 20px;
-    text-align: center;
-}
-
-@media (min-width: 601px) {
-    .weather h2::after {
-        content: " ⛅"; /* Pseudo-element for weather */
-    }
-}
+   /* =============================
+      CSS VARIABLES
+      ============================= */
+   :root {
+       --primary-color: #4b0076; /* Main Theme Color */
+       --text-color: white;
+       --background-color: #f5f5f5;
+       --card-background: white;
+       --card-border-radius: 10px;
+       --card-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+       --transition-speed: 0.3s;
+   }
+   
+   /* =============================
+      FONT STYLES
+      ============================= */
+   .bangers-regular {
+       font-family: "Bangers", system-ui;
+       font-weight: 400;
+       font-style: normal;
+   }
+   
+   .poppins-bold {
+       font-family: "Poppins", sans-serif;
+       font-weight: 700;
+       font-style: normal;
+   }
+   
+   /* =============================
+      GENERAL STYLES
+      ============================= */
+   body {
+       font-family: "Poppins", sans-serif;
+       margin: 0;
+       padding: 0;
+       text-align: center;
+       background-color: var(--background-color);
+   }
+   
+   /* =============================
+      HEADER
+      ============================= */
+   header {
+       background-color: var(--primary-color);
+       color: var(--text-color);
+       padding: 1.5rem;
+   }
+   
+   h1 {
+       margin: 0;
+       font-size: 2rem;
+       font-family: "Bangers", system-ui;
+   }
+   
+   /* =============================
+      HERO SECTION
+      ============================= */
+   .hero {
+       padding: 20px;
+   }
+   
+   .hero img {
+       width: 100%;
+       max-width: 800px;
+       border-radius: var(--card-border-radius);
+       box-shadow: var(--card-shadow);
+   }
+   
+   /* =============================
+      WEATHER SECTION
+      ============================= */
+   .weather {
+       background: var(--card-background);
+       padding: 15px;
+       margin: 20px auto;
+       width: 80%;
+       max-width: 500px;
+       border-radius: var(--card-border-radius);
+       box-shadow: var(--card-shadow);
+   }
+   
+   .weather p {
+       font-size: 1.2rem;
+       margin: 5px 0;
+   }
+   
+   #weather-icon {
+       font-size: 2rem;
+   }
+   
+   /* =============================
+      INFORMATION SECTION
+      ============================= */
+   .info {
+       background: var(--card-background);
+       padding: 20px;
+       margin: 20px auto;
+       width: 90%;
+       max-width: 600px;
+       border-radius: var(--card-border-radius);
+       box-shadow: var(--card-shadow);
+   }
+   
+   .info h2 {
+       margin-top: 0;
+   }
+   
+   .info ul {
+       text-align: left;
+       padding: 0;
+       list-style-type: none;
+   }
+   
+   .info ul li {
+       padding: 8px 0;
+       font-size: 1.1rem;
+       border-bottom: 1px solid #ddd;
+   }
+   
+   .info ul li:last-child {
+       border-bottom: none;
+   }
+   
+   /* =============================
+      FOOTER
+      ============================= */
+   footer {
+       background-color: var(--primary-color);
+       color: var(--text-color);
+       padding: 10px;
+       margin-top: 20px;
+       font-size: 0.9rem;
+   }
+   
