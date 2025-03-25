@@ -1,125 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Akwa Ibom State, Nigeria: geography, population, weather info" />
-  <meta name="author" content="Sunday Prince Augustine" />
-  <title>Akwa Ibom State, Nigeria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals - Country Page</title>
+    <meta name="description" content="Information about Nigeria which includes images, country data, and weather.">
+    <meta name="author" content="Sunday Prince Augustine">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles/style.css" />
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: url('Akwa Ibom.webp') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .header {
-      background-color: #c62828;
-      color: white;
-      font-size: 40px;
-      font-weight: bold;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .green-bar {
-      background-color: #007a3d;
-      height: 10px;
-      width: 100%;
-    }
-
-    .content {
-      flex: 1;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 40px;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.95);
-      border-radius: 10px;
-      padding: 20px;
-      width: 300px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .card h2 {
-      background-color: #2e7d32;
-      color: white;
-      padding: 10px;
-      border-radius: 5px;
-      margin-top: 0;
-    }
-
-    .weather-card h2 {
-      background-color: #007a3d;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .weather-card h2::after {
-      content: '⛅';
-      margin-left: 10px;
-    }
-
-    .footer {
-      background-color: #c62828;
-      color: white;
-      font-size: 14px;
-      text-align: center;
-      padding: 15px;
-    }
-
-    @media (max-width: 768px) {
-      .content {
-        flex-direction: column;
-        gap: 20px;
-      }
-    }
-  </style>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
-  <div class="header">Akwa Ibom State</div>
-  <div class="green-bar"></div>
-
-  <div class="content">
-    <div class="card">
-      <h2>Data</h2>
-      <p><strong>Area:</strong> 7,081 sq km</p>
-      <p><strong>Population:</strong> 5,450,758</p>
-      <p><strong>Capital:</strong> Uyo</p>
-      <p><strong>Languages:</strong> Ibibio, English</p>
-      <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
-      <p><strong>Time Zone:</strong> UTC+1</p>
-      <p><strong>Calling Code:</strong> +234</p>
-      <p><strong>Internet TLD:</strong> .ng</p>
-    </div>
-
-    <div class="card weather-card">
-      <h2>Weather</h2>
-      <p><strong>Temperature:</strong> 28°C</p>
-      <p><strong>Conditions:</strong> Cloudy</p>
-      <p><strong>Wind:</strong> 10 km/h</p>
-      <p><strong>Wind Chill:</strong> 27.5°C</p>
-    </div>
-  </div>
-
-  <div class="footer">
-    ©2024 🌸 Sunday Prince Augustine 🌸 Akwa Ibom State <br>
-    Last Modification: 02/08/2024 22:47:47
-  </div>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="Akwa Ibom.webp" media="(min-width: 786px)">
+                <img src="Akwa Ibom.webp" alt="Akwa Ibom" width="500" height="706">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <div>
+                <ul>
+                    <li>Population: </li>
+                    <li>Capital: </li>
+                    <li>Language: </li>
+                    <li>Currency: </li>
+                    <li>Time Zone: </li>
+                    <li>Calling Code: </li>
+                    <li>Internet TLD: </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>218,541,212</li>
+                    <li>Abuja</li>
+                    <li>English, Other native languages</li>
+                    <li>Naira</li>
+                    <li>GMT+1</li>
+                    <li>+234</li>
+                    <li>.ng</li>
+                </ul>
+            </div>
+        </section>
+        <section class="weather">
+            <div>
+                <h2>Weather</h2>
+                <img src="reshot.svg" alt="Weather Image" width="100" height="100">
+            </div>
+            <div>
+                <ul>
+                    <li>Temperature:</li>
+                    <li>Conditions:</li>
+                    <li>Humidity:</li>
+                    <li>Wind:</li>
+                    <li>Wind Chill:</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>226.9°C</li>
+                    <li>tropical</li>
+                    <li>84.7%</li>
+                    <li>2 to 9.5 m/s</li>
+                    <li> >= 35°C</li>
+                </ul>
+            </div>
+        </section>
+        <section class="weather">
+            <div>
+                <h2>Weather Illustration</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                    <g data-name="Layer 1">
+                        <path class="cls-1" d="M404.07,234.75c9.67,0,9.65,15,0,15H370.42c-9.67,0-9.65-15,0-15Z" />
+                        <path class="cls-1" d="M341.39,254.91q.61-4.35.82-8.78a73.85,73.85,0,0,1,29.32,39.37A51.76,51.76,0,0,1,361.19,388H354c0-3.72,2.46-7.44,7.24-7.5,22-.3,41.21-16.61,44-38.71,2.89-23.28-13.08-44.14-35.61-49a7.53,7.53,0,0,1-5.24-5.23A66.86,66.86,0,0,0,341.39,254.91Z" />
+                        <!-- Additional SVG paths here -->
+                    </g>
+                </svg>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span>  - SP Web & Software Solution - Nigeria! Sunday Prince Augustine @Brigham Young University- Idaho</p>
+        <p class="lastM">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        // JavaScript for displaying current year and last modified date
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
 </body>
+
 </html>
