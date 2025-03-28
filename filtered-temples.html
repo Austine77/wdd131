@@ -35,21 +35,27 @@
     <main>
         <h2 class="poppins-bold">Explore Sacred Temples</h2>
         <div class="gallery">
-            <figure><img src="San_Diego.jpg" alt="San Diego California Temple"><figcaption>San Diego California</figcaption></figure>
-            <figure><img src="salt-lake.jpg" alt="Salt Lake Temple"><figcaption>Salt Lake Temple</figcaption></figure>
-            <figure><img src="Laie.jpg" alt="Laie Hawaii Temple"><figcaption>Laie Hawaii Temple</figcaption></figure>
-            <figure><img src="Nauvoo.jpg" alt="Nauvoo Temple"><figcaption>Nauvoo Temple</figcaption></figure>
-            <figure><img src="aba_nigeria_temple.webp" alt="Aba Nigeria Temple"><figcaption>Aba Nigeria Temple</figcaption></figure>
-            <figure><img src="accra.jpg" alt="Accra Ghana Temple"><figcaption>Accra Ghana Temple</figcaption></figure>
-            <figure><img src="Buenos.jpg" alt="Buenos Aires Argentina Temple"><figcaption>Buenos Aires Argentina Temple</figcaption></figure>
-            <figure><img src="Logan.jpg" alt="Logan Utah Temple"><figcaption>Logan Utah Temple</figcaption></figure>
-            <figure><img src="hong-kong.jpg" alt="Hong Kong China Temple"><figcaption>Hong Kong China Temple</figcaption></figure>
-        </div>
+            <figure><figcaption>San Diego California</figcaption><img src="San_Diego.jpg" alt="San Diego California Temple"></figure>
+            <figure><figcaption>Salt Lake Temple</figcaption><img src="salt-lake.jpg" alt="Salt Lake Temple"></figure>
+            <figure><figcaption>Laie Hawaii Temple</figcaption><img src="Laie.jpg" alt="Laie Hawaii Temple"></figure>
+            <figure><figcaption>Nauvoo Temple</figcaption><img src="Nauvoo.jpg" alt="Nauvoo Temple"></figure>
+            <figure><figcaption>Aba Nigeria Temple</figcaption><img src="aba_nigeria_temple.webp" alt="Aba Nigeria Temple"></figure>
+            <figure><figcaption>Accra Ghana Temple</figcaption><img src="accra.jpg" alt="Accra Ghana Temple"></figure>
+            <figure><figcaption>Buenos Aires Argentina Temple</figcaption><img src="Buenos.jpg" alt="Buenos Aires Argentina Temple"></figure>
+            <figure><figcaption>Logan Utah Temple</figcaption><img src="Logan.jpg" alt="Logan Utah Temple"></figure>
+            <figure><figcaption>Hong Kong China Temple</figcaption><img src="hong-kong.jpg" alt="Hong Kong China Temple"></figure>
+        </div>        
     </main>
 
     <footer>
-        <p>&copy; | 2025 - SP Web & Software Solution - Nigeria | Sunday Prince Augustine @ Brigham Young University-Idaho</p>
-        <p>Last modified: <span id="lastModified"></span></p>
+        <p>&copy;<span id="currentyear"></span>  - SP Web & Software Solution - Nigeria! Sunday Prince Augustine @Brigham Young University- Idaho</p>
+        <p class="lastM">Last Modification: <span id="lastModified"></span></p>
     </footer>
+    <script>
+        // JavaScript for displaying current year and last modified date
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
 </body>
+
 </html>
