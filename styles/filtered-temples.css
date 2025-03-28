@@ -1,125 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap');
+
 .bangers-regular {
   font-family: "Bangers", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
-.poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
+.poppins-regular,
+.poppins-bold,
+.poppins-semibold,
+.poppins-light,
 .poppins-medium {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
 }
 
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.poppins-medium-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.poppins-semibold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.poppins-bold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
+.poppins-regular { font-weight: 400; }
+.poppins-bold { font-weight: 700; }
+.poppins-semibold { font-weight: 600; }
+.poppins-light { font-weight: 300; }
+.poppins-medium { font-weight: 500; }
 
 :root {
   --primary-color: #4b0076;
   --text-color: white;
   --background-color: #f5f5f5;
-  --gallery-background: white;
-  --gallery-border-radius: 8px;
-  --gallery-gap: 15px;
+  --gallery-background: #ffffff;
+  --gallery-border-radius: 12px;
+  --gallery-gap: 25px;
   --transition-speed: 0.3s;
 }
 
@@ -139,6 +46,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav {
@@ -192,38 +100,43 @@ h1, h2 {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--gallery-gap);
-  padding: 20px;
+  padding: 30px;
 }
 
-/* Temple card */
+/* Temple Card Styling */
 .temple-card {
-  background: var(--gallery-background);
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
   border-radius: var(--gallery-border-radius);
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform var(--transition-speed);
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .temple-card:hover {
-  transform: scale(1.02);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.temple-card h3 {
+.temple-card figcaption {
+  font-weight: bold;
+  font-size: 1.2rem;
   color: var(--primary-color);
-  margin: 0 0 10px;
-  font-size: 1.3rem;
-  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .temple-card p {
-  margin: 0.3rem 0;
+  margin: 0.25rem 0;
   font-size: 0.95rem;
+  color: #333;
 }
 
-/* Lazy loading animation */
+/* Lazy loading fade-in */
 .temple-card img {
   width: 100%;
   height: auto;
