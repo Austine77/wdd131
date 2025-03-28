@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Here are the beautiful temples around the world." />
   <meta name="author" content="Sunday Prince Augustine" />
@@ -12,24 +12,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 
-
   <!-- External CSS -->
   <link rel="stylesheet" href="styles/temples.css" />
   <link rel="stylesheet" href="styles/temples-large.css" />
 
   <!-- JavaScript -->
   <script defer src="scripts/temples.js"></script>
-
-  <style>
-    img[loading="lazy"] {
-      opacity: 0;
-      transition: opacity 0.6s ease-in-out;
-    }
-
-    img[loading="lazy"].loaded {
-      opacity: 1;
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -47,9 +35,7 @@
   <main>
     <h2 class="poppins-bold">Explore Sacred Temples</h2>
     <div class="gallery">
-
-      <!-- Example figure block -->
-      <figure>
+      <figure class="temple-card">
         <figcaption>San Diego California Temple</figcaption>
         <p><strong>Location:</strong> San Diego, California</p>
         <p><strong>Dedicated:</strong> April 25, 1993</p>
@@ -57,7 +43,7 @@
         <img src="San_Diego.jpg" alt="San Diego California Temple" loading="lazy" width="400" height="267" />
       </figure>
 
-      <figure>
+      <figure class="temple-card">
         <figcaption>Salt Lake Temple</figcaption>
         <p><strong>Location:</strong> Salt Lake City, Utah</p>
         <p><strong>Dedicated:</strong> April 6, 1893</p>
@@ -65,7 +51,7 @@
         <img src="salt-lake.jpg" alt="Salt Lake Temple" loading="lazy" width="400" height="267" />
       </figure>
 
-      <figure>
+      <figure class="temple-card">
         <figcaption>Laie Hawaii Temple</figcaption>
         <p><strong>Location:</strong> Laie, Hawaii</p>
         <p><strong>Dedicated:</strong> November 27, 1919</p>
@@ -73,7 +59,7 @@
         <img src="Laie.jpg" alt="Laie Hawaii Temple" loading="lazy" width="400" height="267" />
       </figure>
 
-      <figure>
+      <figure class="temple-card">
         <figcaption>Nauvoo Temple</figcaption>
         <p><strong>Location:</strong> Nauvoo, Illinois</p>
         <p><strong>Dedicated:</strong> June 27, 2002</p>
@@ -81,7 +67,7 @@
         <img src="Nauvoo.jpg" alt="Nauvoo Temple" loading="lazy" width="400" height="267" />
       </figure>
 
-      <figure>
+      <figure class="temple-card">
         <figcaption>Aba Nigeria Temple</figcaption>
         <p><strong>Location:</strong> Aba, Nigeria</p>
         <p><strong>Dedicated:</strong> August 7, 2005</p>
@@ -89,7 +75,7 @@
         <img src="aba_nigeria_temple.webp" alt="Aba Nigeria Temple" loading="lazy" width="400" height="267" />
       </figure>
 
-      <figure>
+      <figure class="temple-card">
         <figcaption>Accra Ghana Temple</figcaption>
         <p><strong>Location:</strong> Accra, Ghana</p>
         <p><strong>Dedicated:</strong> January 11, 2004</p>
@@ -97,7 +83,7 @@
         <img src="accra.jpg" alt="Accra Ghana Temple" loading="lazy" width="400" height="267" />
       </figure>
 
-      <figure>
+      <figure class="temple-card">
         <figcaption>Buenos Aires Argentina Temple</figcaption>
         <p><strong>Location:</strong> Buenos Aires, Argentina</p>
         <p><strong>Dedicated:</strong> January 17, 1986</p>
@@ -105,7 +91,7 @@
         <img src="buenos.jpg" alt="Buenos Aires Argentina Temple" loading="lazy" width="400" height="267" />
       </figure>
 
-      <figure>
+      <figure class="temple-card">
         <figcaption>Logan Utah Temple</figcaption>
         <p><strong>Location:</strong> Logan, Utah</p>
         <p><strong>Dedicated:</strong> May 17, 1884</p>
@@ -113,7 +99,7 @@
         <img src="Logan.jpg" alt="Logan Utah Temple" loading="lazy" width="400" height="267" />
       </figure>
 
-      <figure>
+      <figure class="temple-card">
         <figcaption>Hong Kong China Temple</figcaption>
         <p><strong>Location:</strong> Hong Kong, China</p>
         <p><strong>Dedicated:</strong> May 26, 1996</p>
@@ -121,7 +107,7 @@
         <img src="hong-kong.jpg" alt="Hong Kong China Temple" loading="lazy" width="400" height="267" />
       </figure>
 
-      <figure>
+      <figure class="temple-card">
         <figcaption>Bengaluru India Temple</figcaption>
         <p><strong>Location:</strong> Bengaluru, India</p>
         <p><strong>Dedicated:</strong> June 2, 2024</p>
@@ -129,7 +115,7 @@
         <img src="Full-Bengaluru-India-Temple.jpg" alt="Bengaluru India Temple" loading="lazy" width="400" height="267" />
       </figure>
 
-      <figure>
+      <figure class="temple-card">
         <figcaption>Yigo Guam Temple</figcaption>
         <p><strong>Location:</strong> Yigo, Guam</p>
         <p><strong>Dedicated:</strong> May 22, 2022</p>
@@ -137,14 +123,13 @@
         <img src="Yigo-Guam-Temple.jpg" alt="Yigo Guam Temple" loading="lazy" width="400" height="267" />
       </figure>
 
-      <figure>
+      <figure class="temple-card">
         <figcaption>Cobán Guatemala Temple</figcaption>
         <p><strong>Location:</strong> Cobán, Guatemala</p>
         <p><strong>Dedicated:</strong> June 9, 2024</p>
         <p><strong>Area:</strong> 8,800 sq ft</p>
         <img src="Cobán-Guatemala-Temple.webp" alt="Cobán Guatemala Temple" loading="lazy" width="400" height="267" />
       </figure>
-
     </div>
   </main>
 
