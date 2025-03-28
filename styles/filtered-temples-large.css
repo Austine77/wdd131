@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+    }
+
+    nav {
+        display: flex; /* Show navigation */
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        display: inline-block;
+    }
+
+    #menu-toggle {
+        display: none; /* Hide hamburger menu on larger screens */
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+}
