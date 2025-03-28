@@ -25,6 +25,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  line-height: 1.6;
 }
 
 header {
@@ -44,6 +45,7 @@ nav {
   top: 60px;
   right: 0;
   width: 100%;
+  z-index: 10;
 }
 
 nav a {
@@ -70,6 +72,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     position: static;
+    width: auto;
   }
 
   #menu-toggle {
@@ -116,11 +119,18 @@ h1, h2 {
   font-size: 0.95rem;
 }
 
+/* Lazy loading animation */
 .temple-card img {
   width: 100%;
   height: auto;
   border-radius: var(--gallery-border-radius);
   margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.temple-card img.loaded {
+  opacity: 1;
 }
 
 footer {
