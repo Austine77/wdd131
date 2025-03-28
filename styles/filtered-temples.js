@@ -23,7 +23,7 @@ const temples = [
   {
     templeName: "Yigo Guam",
     location: "Yigo, Guam",
-    dedicated: "2020, May, 2",
+    dedicated: "2022, May, 22",
     area: 6861,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
   },
@@ -68,6 +68,20 @@ const temples = [
     dedicated: "2010, June, 13",
     area: 28000,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cebu-city-philippines/400x250/cebu-city-philippines-temple-lds-822126-wallpaper.jpg"
+  },
+  {
+    templeName: "Bengaluru India",
+    location: "Bengaluru, India",
+    dedicated: "2024, June, 2",
+    area: 40000,
+    imageUrl: "https://churchofjesuschrist.org/imgs/2c82c7de35f911ee8b5eeeeeac1b7b05f161943d/full/320%2C/0/default"
+  },
+  {
+    templeName: "Cobán Guatemala",
+    location: "Cobán, Guatemala",
+    dedicated: "2024, June, 9",
+    area: 8800,
+    imageUrl: "https://churchofjesuschrist.org/imgs/1e0c3a27cb5e11ee8b5eeeeeac1b7b05cf5c598f/full/320%2C/0/default"
   }
 ];
 
