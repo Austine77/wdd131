@@ -1,119 +1,45 @@
- /* Large Screen Styles (Desktops/Tablets) */
- @media screen and (min-width: 640px) {
-    header {
-        padding: 20px 40px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    nav {
-        max-width: 1100px;
-        display: block;
-        margin: 1rem;
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: right;
-        align-items: center;
-    }
-
-    nav a {
-        font-size: 18px;
-        display: block;
-        color: #F8F8F7;
-        text-align: center;
-        text-decoration: none;
-        font-weight: 600;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    #shop ul {
-        grid-template-columns: repeat(4, 1fr);
-        /* 4 items per row on large screens */
-    }
-
-    #shop li {
-        padding: 20px;
-        font-size: 18px;
-    }
-
-    footer p {
-        font-size: 18px;
-    }
-}
-
-/* Large Screen Styles (Desktops/Tablets) */
 @media screen and (min-width: 640px) {
-   header {
-       padding: 20px 40px;
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-   }
-
-   nav {
-       max-width: 1100px;
-       display: block;
-       margin: 1rem;
-   }
-
-   nav ul {
-       display: flex;
-       justify-content: right;
-       align-items: center;
-   }
-
-   nav a {
-       font-size: 18px;
-       display: block;
-       color: #F8F8F7;
-       text-align: center;
-       text-decoration: none;
-       font-weight: 600;
-   }
-
-   nav li {
-       list-style-type: none;
-   }
-
-   #menu {
-       display: none;
-   }
-
-   #shop ul {
-       grid-template-columns: repeat(4, 1fr);
-       /* 4 items per row on large screens */
-   }
-
-   #shop li {
-       padding: 20px;
-       font-size: 18px;
-   }
-
-   footer p {
-       font-size: 18px;
-   }
-
-   /* HERO SECTION - Large Screens */
-   .hero {
-       text-align: center;
-       margin: 40px auto;
-       max-width: 90%; /* Limits the image width */
-   }
-
-   .hero picture {
-       display: block;
-       text-align: center;
-   }
-
-   .hero img {
-       width: 80%; /* Prevents it from taking the full screen */
-       max-width: 900px; /* Ensures it doesn’t get too large */
-       height: auto;
-       display: block;
-       margin: 0 auto;
-   }
-}
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .nav-menu {
+      justify-content: flex-start;
+    }
+  
+    #shop ul {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    #shop li {
+      padding: 20px;
+      font-size: 18px;
+    }
+  
+    footer {
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      padding: 15px;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 1rem;
+    }
+  
+    .hero {
+      text-align: center;
+      margin: 40px auto;
+      max-width: 90%;
+    }
+  
+    .hero img {
+      width: 80%;
+      max-width: 900px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
