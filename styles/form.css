@@ -1,0 +1,139 @@
+:root {
+    --main-color: #fefae0;
+    --banner-color: #faedcd;
+    --foreground-color: #2a2a2a;        /* Corrected from --forground-color */
+    --fieldset-color: #1139e9;
+    --box-background: #fffdf6;
+    --accent-color: #606c38;
+    --button-hover: #b08968;
+}
+
+body {
+    background-image: linear-gradient(var(--main-color), var(--banner-color), var(--main-color));
+    font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+    color: var(--foreground-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--banner-color);
+    color: var(--foreground-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/*-----Form Styling------*/
+
+
+.rf1 {
+    margin: 2rem 0;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.rf1 fieldset {
+    display: block;
+    background-color: var(--fieldset-color);
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    border-radius: 6px;
+    border-color: var(--forground-color);
+    border-style: double;
+    margin-bottom: .75rem;
+    font-weight: 500;
+    
+
+}
+
+.rf1 legend {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--foreground-color);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-top: 8px;
+    padding-bottom: 30px;
+}
+
+.rf1 label {
+    display: block;
+    color: var(--foreground-color);
+    margin: 1rem 0 0.5rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.rf1 select,
+.rf1 input[type="date"],
+.rf1 textarea,
+.rf1 input[type="text"] {
+    color: var(--foreground-color);
+    background-color: var(--box-background);
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: 2px solid var(--accent-color);
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.rf1 input[type="radio"],
+.rf1 input[type="checkbox"] {
+    margin-right: 0.5rem;
+    height: 18px;
+    width: 18px;
+    accent-color: var(--accent-color);
+}
+
+.rf1 textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.rf1 .checkbox-group,
+.rf1 .radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.rf1 input[type="submit"] {
+    border: none;
+    background-color: var(--fieldset-color);
+    color: var(--foreground-color);
+    border-radius: 6px;
+    padding: 0.9rem 1.5rem;
+    width: 50%;
+    margin: 2rem auto 0;
+    display: block;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rf1 input[type="submit"]:hover {
+    background-color: var(--button-hover);
+    color: white;
+}
+
+footer {
+    font-weight: 500;
+    padding: 1rem;
+    font-size: 0.95rem;
+    background-color: var(--main-color);
+    color: #555;
+    border-top: 1px solid #ccc;
+}
