@@ -251,7 +251,7 @@ footer p {
 }
 
 .social img {
-    width: 3em;
+    width: 1em;
 }
 
 footer {
@@ -261,7 +261,6 @@ footer {
     padding: 1em;
     margin-top: 100px;
 }
-
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
