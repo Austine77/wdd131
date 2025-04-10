@@ -161,12 +161,52 @@
     }
 
     footer {
-      background-color: #1f2937;
-      color: #fff;
-      padding: 30px 40px;
-      text-align: center;
-      font-size: 0.9rem;
-    }
+    background-color: #283618;
+    /* Dark Green */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #bc6c25;
+    /* Golden Yellow */
+}
+
+/* Social Media Links in Footer */
+footer p {
+    font-size: 16px;
+}
+
+/* Social media link styling */
+
+
+.social img {
+    max-width: 100px;
+}
+
+.social {
+    grid-column: 3;
+    justify-self: end;
+}
+
+.social img {
+    width: 1em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin-top: 100px;
+}
+
   </style>
 </head>
 
@@ -312,9 +352,18 @@
   </section>
 
   <footer>
-    &copy; 2025 Sunday Prince Global Access. All rights reserved @ Brigham Young University- Idaho
-      <p class="lastM">Last Modification: 04/10/2025: 10:14 AM <span id="lastModified"></span></p>
-  
+      <p>&copy; <span id="currentyear"></span>2025 - Sunday Prince Global Access @
+      Ikot Asurua, Shopping center, Ikot Ekpene, Akwa Ibom State</p>
+      <p id="lastModified">Last Modification: <span></span></p>
+      <a href="wireframe.png">wireframe</a>
+      <div class="social">
+          <a href="https://facebook.com">
+              <img src="facebook.svg" alt="Facebook"></a>
+          <a href="https://twitter.com">
+              <img src="twitter.svg" alt="Twitter"></a>
+          <a href="https://instagram.com">
+              <img src="instagram.svg" alt="instagram"></a>
+
       <script>
         function shopNow() {
           window.location.href = "#shop";
