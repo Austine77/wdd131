@@ -142,43 +142,68 @@
     color: #666;
   }
   
-  #contact {
-    padding: 50px;
-    background-color: #f3f4f6;
-  }
-  
-  #contact h3 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  #contact form {
-    max-width: 600px;
+  .contact-page {
+    max-width: 700px;
     margin: auto;
+    padding: 40px 20px;
+  }
+  
+  .contact-page h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-page p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+  }
+  
+  .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
   }
   
-  #contact input,
-  #contact textarea {
-    padding: 10px;
-    width: 100%;
+  .contact-form label {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 6px;
+    font-size: 1rem;
+    resize: vertical;
   }
   
-  #contact button {
-    width: fit-content;
-    padding: 12px 25px;
+  .contact-form button {
+    margin-top: 20px;
+    padding: 12px;
     background-color: #facc15;
+    color: #111;
+    font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: background-color 0.3s;
   }
   
-  #contact button:hover {
+  .contact-form button:hover {
     background-color: #eab308;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  
+  footer .social img {
+    width: 30px;
+    margin: 0 8px;
+    vertical-align: middle;
   }
   
   footer {

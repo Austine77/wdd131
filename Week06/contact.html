@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Contact the Sunday Prince Global Access team for inquiries and bookings.">
-  <meta name="author" content="Sunday Prince Augustine">
-  <title>Contact Us - Sunday Prince Global Access Contact Page</title>
+  <meta name="author" content="Sunday Prince Augustine" />
+  <title>Sunday Prince Global Access Contact Page</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -25,32 +25,45 @@
       </ul>
     </nav>
   </header>
-  <section id="contact">
-    <h3>Contact Us</h3>
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+  <main class="contact-page">
+    <section>
+      <h2>Contact Us</h2>
+      <p>If you have any questions, inquiries, or want to book our services, fill out the form below and we'll get back to you shortly.</p>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required />
 
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="sunday-prince@global.com" required />
+
+        <label for="Phone">Phone Number:</label>
+        <input type="Phone" id="Phone" name="Phone" placeholder="+234-912-919-3069" required />
+
+        <label for="Phone">Whatsapp Number:</label>
+        <input type="Whatsapp" id="Whatsapp" name="Whatsapp" placeholder="+234-805-945-4897" required />
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Message subject" required />
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2025 Sunday Prince Global Access. All rights reserved @ Brigham Young University- Idaho.</p>
-    <a href="wireframe.png">wireframe</a>
+    <p>&copy; 2025 Sunday Prince Global Access. All rights reserved @ Brigham Young University - Idaho.</p>
+    <a href="wireframe.png" target="_blank">View Wireframe</a>
     <div class="social">
-        <a href="https://facebook.com">
-            <img src="facebook.svg" alt="Facebook"></a>
-        <a href="https://twitter.com">
-            <img src="twitter.svg" alt="Twitter"></a>
-        <a href="https://instagram.com">
-            <img src="instagram.svg" alt="instagram"></a>
-</footer>
+      <a href="https://facebook.com" target="_blank"><img src="facebook.svg" alt="Facebook icon" /></a>
+      <a href="https://twitter.com" target="_blank"><img src="twitter.svg" alt="Twitter icon" /></a>
+      <a href="https://instagram.com" target="_blank"><img src="instagram.svg" alt="Instagram icon" /></a>
+    </div>
+  </footer>
 </body>
 
 </html>
