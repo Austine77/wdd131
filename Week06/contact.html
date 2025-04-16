@@ -8,6 +8,7 @@
   <meta name="author" content="Sunday Prince Augustine" />
   <title>Sunday Prince Global Access Contact Page</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script> <!-- Link to the external JavaScript -->
 </head>
 
 <body>
@@ -19,9 +20,9 @@
     <nav>
       <ul>
         <li><a href="https://austine77.github.io/wdd131/Week06/index.html">Home</a></li>
-        <li><a href="/index.html">Shop</a></li>
-        <li><a href="index.html#about">About</a></li>
-        <li><a href="https://austine77.github.io/wdd131/Week06/contact.html" class="active">Contact</a></li>
+        <li><a href="https://austine77.github.io/wdd131/Week06/index_shop.html">Shop</a></li>
+        <li><a href="https://austine77.github.io/wdd131/Week06/about.html">About</a></li>
+        <li><a href="https://austine77.github.io/wdd131/Week06/contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -39,10 +40,10 @@
         <input type="email" id="email" name="email" placeholder="sunday-prince@global.com" required />
 
         <label for="Phone">Phone Number:</label>
-        <input type="Phone" id="Phone" name="Phone" placeholder="+234-912-919-3069" required />
+        <input type="tel" id="Phone" name="Phone" placeholder="+234-912-919-3069" required />
 
-        <label for="Phone">Whatsapp Number:</label>
-        <input type="Whatsapp" id="Whatsapp" name="Whatsapp" placeholder="+234-805-945-4897" required />
+        <label for="Whatsapp">Whatsapp Number:</label>
+        <input type="tel" id="Whatsapp" name="Whatsapp" placeholder="+234-805-945-4897" required />
 
         <label for="subject">Subject:</label>
         <input type="text" id="subject" name="subject" placeholder="Message subject" required />
@@ -56,14 +57,23 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Sunday Prince Global Access. All rights reserved @ Brigham Young University - Idaho.</p>
-    <a href="wireframe.png" target="_blank">View Wireframe</a>
+    <p>&copy; 2025 Sunday Prince Global Access. All rights reserved @ Brigham Young University- Idaho.</p>
+    <a href="wireframe.png">wireframe</a>
     <div class="social">
-      <a href="https://facebook.com" target="_blank"><img src="facebook.svg" alt="Facebook icon" /></a>
-      <a href="https://twitter.com" target="_blank"><img src="twitter.svg" alt="Twitter icon" /></a>
-      <a href="https://instagram.com" target="_blank"><img src="instagram.svg" alt="Instagram icon" /></a>
-    </div>
-  </footer>
+        <a href="https://facebook.com">
+            <img src="facebook.svg" alt="Facebook"></a>
+        <a href="https://twitter.com">
+            <img src="twitter.svg" alt="Twitter"></a>
+        <a href="https://instagram.com">
+            <img src="instagram.svg" alt="instagram"></a>
+</footer>
+
+<script>
+  // JavaScript function to link the Shop Now button to the main page
+  function shopNow() {
+    window.location.href = "contact.html"; // Redirect to main page (index.html)
+  }
+</script>
 </body>
 
 </html>
